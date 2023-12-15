@@ -15,6 +15,8 @@ namespace PortafolioNet.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Nombre = "Miguel Alonso";
+            ViewBag.Descripcion = "Soy un desarrollador Full Stack Junior especializado en tecnologías .NET y Javascript."; 
             return View();
         }
 
