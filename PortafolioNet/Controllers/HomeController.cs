@@ -15,9 +15,15 @@ namespace PortafolioNet.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Nombre = "Miguel Alonso";
-            ViewBag.Descripcion = "Soy un desarrollador Full Stack Junior especializado en tecnologías .NET y Javascript."; 
-            return View();
+            //ViewBag.Nombre = "Miguel Alonso";
+            var persona = new Persona()
+            {
+                Nombre = "Miguel Alonso",
+                Edad = 29,
+                Descripcion = "Soy un desarrollador Full Stack Junior especializado en tecnologías .NET y Javascript."
+            };
+
+            return View(persona);
         }
 
         public IActionResult Privacy()
