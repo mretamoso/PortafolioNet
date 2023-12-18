@@ -1,16 +1,20 @@
-﻿@model Persona
+﻿
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Pagina principal";
+    
 }
 
 <div class="text-center">
-    <h1 class="display-4">Soy @Model.Nombre (@Model.Edad)</h1>
+
+    
+
+    <h1 class="display-4">Soy @Model.Nombre </h1>
+    
     <h2>@Model.Descripcion</h2>
 
-    <img 
-        id="foto"
-        src="~/imagenes/miguel con fondo.jpeg" alt="foto de miguel" />
+    <img id="foto"
+         src="~/imagenes/miguel con fondo.jpeg" alt="foto de miguel" />
 
 </div>
 
