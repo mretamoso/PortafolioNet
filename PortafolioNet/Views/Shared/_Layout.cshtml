@@ -27,19 +27,22 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Proyectos">Proyectos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <div class="container-fluid">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-5">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top footer text-muted mt-4 text-center">
+        <div class="container mt-2">
             &copy; 2023 - PortafolioNet - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
